@@ -1,4 +1,4 @@
-/* 
+/*
 # create a user
 docker exec -i -t jenkins-wsb bash
 
@@ -25,7 +25,7 @@ import hudson.tasks.Mailer
 
 def userId = args[0]
 def password = args[1]
-def email = args[2]
+def email = args[2] 
 def instance = jenkins.model.Jenkins.instance
 def existingUser = instance.securityRealm.allUsers.find {it.id == userId}
 
